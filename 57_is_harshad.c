@@ -1,7 +1,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 
-#define UNTIL 101
+#define UNTIL 100
 
 int is_harshad(int val)
 { 
@@ -20,11 +20,10 @@ int is_harshad(int val)
 
 int main(void)
 {
-    for (int harshad_num = 1, i = 0; harshad_num != UNTIL; ++i)
+    for (int harshad_num = 1, i = 0; harshad_num != UNTIL + 1; ++i)
     {
-        if (is_harshad(i)) {
+        if (is_harshad(i))
             printf("%d is %d numbered harshad number\n", i, harshad_num++);
-        }
     }
     
     return EXIT_SUCCESS;
